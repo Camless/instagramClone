@@ -43,6 +43,7 @@ public class AuthManager {
 			} else {
 				// user / email already exists
 				completion(false)
+				return
 			}
 		}
 		
@@ -62,6 +63,18 @@ public class AuthManager {
 		} else if let username = username {
 			print(username)
 		}
-		
+	}
+	
+	/// Attempt to logout Firebase user
+	public func logOut(completion: (Bool) -> Void) {
+		do {
+			try Auth.auth().signOut()
+			completion(true)
+			return
+		} catch {
+			completion(false)
+			print(error)
+			return
+		}
 	}
 }

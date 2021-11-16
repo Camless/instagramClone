@@ -28,7 +28,6 @@ public class DatabaseManager {
 	///  	- username: String representing username
 	///  	- completion: Async callback for result if db entry succeded
 	public func insertNewUser(with email: String, username: String, completion: @escaping (Bool) -> Void) {
-		print(email.safeDatabaseKey())
 		database.child(email.safeDatabaseKey()).setValue(["username": username]) { error, _ in
 			if error == nil {
 				// succeeded

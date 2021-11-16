@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="NTQ-Z1-fPz" kind="relationship" relationship="viewControllers" id="J7d-Va-830"/>
@@ -35,7 +35,9 @@
         <scene sceneID="84Y-og-mvP">
             <objects>
                 <navigationController id="NTQ-Z1-fPz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="homekit" catalog="system" id="VYq-dI-Vje"/>
+                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="VYq-dI-Vje">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zKF-zG-uCI">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -52,7 +54,9 @@
         <scene sceneID="eKy-fV-9tk">
             <objects>
                 <navigationController id="ary-uc-cv3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="person.fill" catalog="system" id="wLg-G5-9z6"/>
+                    <tabBarItem key="tabBarItem" title="" image="person.fill" catalog="system" id="wLg-G5-9z6">
+                        <color key="badgeColor" systemColor="secondarySystemFillColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RTd-Od-euo">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -69,7 +73,9 @@
         <scene sceneID="nTf-pJ-uAs">
             <objects>
                 <navigationController id="GVD-bs-5d4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="bell.fill" catalog="system" id="9dO-y6-02o"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart.fill" catalog="system" id="9dO-y6-02o">
+                        <color key="badgeColor" systemColor="secondarySystemFillColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QSs-c9-enT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -86,7 +92,9 @@
         <scene sceneID="9fi-10-qMB">
             <objects>
                 <navigationController id="z0T-m9-Ow1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="globe" catalog="system" id="gZC-qK-VUy"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="gZC-qK-VUy">
+                        <color key="badgeColor" systemColor="secondarySystemFillColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ei1-3s-Rz7">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -103,7 +111,9 @@
         <scene sceneID="I5X-41-WsZ">
             <objects>
                 <navigationController id="rRJ-b8-T0Z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="plus" catalog="system" id="VeF-hT-Ye3"/>
+                    <tabBarItem key="tabBarItem" title="" image="plus" catalog="system" id="VeF-hT-Ye3">
+                        <color key="badgeColor" systemColor="secondarySystemFillColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KQP-CN-ILa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -198,11 +208,17 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell.fill" catalog="system" width="128" height="124"/>
-        <image name="globe" catalog="system" width="128" height="121"/>
-        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
