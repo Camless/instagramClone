@@ -23,8 +23,6 @@ class NotificationsViewController: UIViewController {
 		
 		tableView.delegate = self
 		tableView.dataSource = self
-		
-
     }
 	
 	override func viewDidLayoutSubviews() {
@@ -42,5 +40,5 @@ extension NotificationsViewController: UITableViewDelegate, UITableViewDataSourc
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 		return cell
-}
+	}
 }
