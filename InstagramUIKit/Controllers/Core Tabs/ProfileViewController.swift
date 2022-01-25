@@ -18,9 +18,12 @@ final class ProfileViewController: UIViewController {
 		configureNavigationBar()
 		
 		let layout = UICollectionViewFlowLayout()
+		let size = (view.width - 4) / 3
 		layout.scrollDirection = .vertical
+		layout.minimumLineSpacing = 1
+		layout.minimumInteritemSpacing = 1
 		layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-		layout.itemSize = CGSize(width: view.width / 3, height: view.height / 3)
+		layout.itemSize = CGSize(width: size, height: size)
 		
 		
 		collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
