@@ -81,7 +81,7 @@ final class EditProfileViewController: UIViewController {
 		actionSheet.addAction(UIAlertAction(title: "Choose from Library", style: .default, handler: { _ in
 			
 		}))
-		actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { _ in
+		actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in
 			
 		}))
 		
@@ -133,8 +133,6 @@ extension EditProfileViewController: UITableViewDataSource {
 		
 		profilePhotoButton.addTarget(self, action: #selector(didTapProfilePhotoButton), for: .touchUpInside)
 		
-		
-		
 		return header
 	}
 	
@@ -145,6 +143,7 @@ extension EditProfileViewController: UITableViewDataSource {
 
 extension EditProfileViewController: FormTableViewCellDelegate {
 	func formTableViewCell(_ cell: FormTableViewCell, didUpdateField updatedModel: EditProfileFormModel) {
+		// Update the model here
 		print(updatedModel.value ?? "nil")
 	}
 	

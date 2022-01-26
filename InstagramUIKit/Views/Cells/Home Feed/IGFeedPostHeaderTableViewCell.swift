@@ -7,6 +7,6 @@
 
 import UIKit
 
-class IGFeedPostHeaderCollectionViewCell: UITableViewCell {
+class IGFeedPostHeaderTableViewCell: UITableViewCell {
     
 }

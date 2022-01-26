@@ -59,6 +59,7 @@ class FormTableViewCell: UITableViewCell {
 	}
 	
 	override func prepareForReuse() {
+		// To make sure a prior cell's properties are not translated into a new cell
 		super.prepareForReuse()
 		formLabel.text = nil
 		field.placeholder = nil
