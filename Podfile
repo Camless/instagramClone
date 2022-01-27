@@ -7,6 +7,7 @@ target 'InstagramUIKit' do
 
   # Pods for InstagramUIKit
 pod "Appirater"
+pod "SDWebImage"
 
 # Firebase
 pod "Firebase/Core"
