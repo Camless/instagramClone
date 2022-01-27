@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		073C884D27A33DEC004659D1 /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C884C27A33DEC004659D1 /* UserFollowTableViewCell.swift */; };
+		073C884F27A3553B004659D1 /* FollowState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C884E27A3553B004659D1 /* FollowState.swift */; };
+		073C885127A35567004659D1 /* UserRelationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C885027A35567004659D1 /* UserRelationship.swift */; };
 		077CE4E62743343800DCC176 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077CE4E52743343800DCC176 /* DatabaseManager.swift */; };
 		077CE4E8274334CF00DCC176 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077CE4E7274334CF00DCC176 /* AuthManager.swift */; };
 		077CE4EA2743352600DCC176 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077CE4E92743352600DCC176 /* StorageManager.swift */; };
@@ -52,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		073C884C27A33DEC004659D1 /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
+		073C884E27A3553B004659D1 /* FollowState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowState.swift; sourceTree = "<group>"; };
+		073C885027A35567004659D1 /* UserRelationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRelationship.swift; sourceTree = "<group>"; };
 		077CE4E52743343800DCC176 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		077CE4E7274334CF00DCC176 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		077CE4E92743352600DCC176 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 				07A87B9E27A20A8B001EEE75 /* CommentLikeModel.swift */,
 				07A87BA027A20A9C001EEE75 /* PostLikeModel.swift */,
 				07A87BA227A20B80001EEE75 /* UserCountModel.swift */,
+				073C884E27A3553B004659D1 /* FollowState.swift */,
+				073C885027A35567004659D1 /* UserRelationship.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -406,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07B35D542742AFA100F2E615 /* EditProfileViewController.swift in Sources */,
+				073C884F27A3553B004659D1 /* FollowState.swift in Sources */,
 				07B35D502742AF6600F2E615 /* LoginViewController.swift in Sources */,
 				07B35D432742AEBF00F2E615 /* ExploreViewController.swift in Sources */,
 				07B35D452742AED500F2E615 /* CameraViewController.swift in Sources */,
@@ -426,6 +433,7 @@
 				077CE4FD274C6CC900DCC176 /* PhotoCollectionViewCell.swift in Sources */,
 				07B35D5A2742AFCA00F2E615 /* SearchViewController.swift in Sources */,
 				077CE4EC27434F1A00DCC176 /* Extensions.swift in Sources */,
+				073C885127A35567004659D1 /* UserRelationship.swift in Sources */,
 				077CE4F4274C1F3800DCC176 /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				07A87BA327A20B80001EEE75 /* UserCountModel.swift in Sources */,
 				077CE4F8274C1F7A00DCC176 /* IGFeedPostGeneralTableViewCell.swift in Sources */,
