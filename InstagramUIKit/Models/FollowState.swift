@@ -8,5 +8,6 @@
 import Foundation
 
 enum FollowState {
-	case following, notFollowing
+	case following
+	case notFollowing
 }

@@ -10,6 +10,7 @@ import Foundation
 struct User {
 	let username: String
 	let name: (first: String, last: String)
+	let profilePhoto: URL
 	let birthdate: Date
 	let gender: Gender
 	let counts: UserCount
