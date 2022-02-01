@@ -9,6 +9,8 @@ import UIKit
 import FirebaseAuth
 
 class HomeViewController: UIViewController {
+	
+	private var feedRenderModels = [HomeFeedRenderViewModel]()
 
 	private let tableView: UITableView = {
 		let tableView = UITableView()

@@ -14,6 +14,8 @@
 		073C885627A8D929004659D1 /* NotificationFollowEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C885527A8D929004659D1 /* NotificationFollowEventTableViewCell.swift */; };
 		073C885827A8D937004659D1 /* NotificationLikeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C885727A8D937004659D1 /* NotificationLikeEventTableViewCell.swift */; };
 		073C885A27A98152004659D1 /* UserNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C885927A98152004659D1 /* UserNotification.swift */; };
+		073C885C27A9AB42004659D1 /* PostRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C885B27A9AB42004659D1 /* PostRender.swift */; };
+		073C885E27A9BE7F004659D1 /* HomeFeedRenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C885D27A9BE7F004659D1 /* HomeFeedRenderModel.swift */; };
 		077CE4E62743343800DCC176 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077CE4E52743343800DCC176 /* DatabaseManager.swift */; };
 		077CE4E8274334CF00DCC176 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077CE4E7274334CF00DCC176 /* AuthManager.swift */; };
 		077CE4EA2743352600DCC176 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077CE4E92743352600DCC176 /* StorageManager.swift */; };
@@ -64,6 +66,8 @@
 		073C885527A8D929004659D1 /* NotificationFollowEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowEventTableViewCell.swift; sourceTree = "<group>"; };
 		073C885727A8D937004659D1 /* NotificationLikeEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLikeEventTableViewCell.swift; sourceTree = "<group>"; };
 		073C885927A98152004659D1 /* UserNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotification.swift; sourceTree = "<group>"; };
+		073C885B27A9AB42004659D1 /* PostRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRender.swift; sourceTree = "<group>"; };
+		073C885D27A9BE7F004659D1 /* HomeFeedRenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedRenderModel.swift; sourceTree = "<group>"; };
 		077CE4E52743343800DCC176 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		077CE4E7274334CF00DCC176 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		077CE4E92743352600DCC176 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
@@ -150,7 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				073C885427A8D8FB004659D1 /* Notifications */,
-				077CE4F2274C1F1500DCC176 /* Home Feed */,
+				077CE4F2274C1F1500DCC176 /* Home Feed & Posts */,
 				077CE4F9274C3E1E00DCC176 /* FormTableViewCell.swift */,
 				077CE4FC274C6CC900DCC176 /* PhotoCollectionViewCell.swift */,
 				073C884C27A33DEC004659D1 /* UserFollowTableViewCell.swift */,
@@ -158,7 +162,7 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		077CE4F2274C1F1500DCC176 /* Home Feed */ = {
+		077CE4F2274C1F1500DCC176 /* Home Feed & Posts */ = {
 			isa = PBXGroup;
 			children = (
 				077CE4F0274C1DD000DCC176 /* IGFeedPostTableViewCell.swift */,
@@ -166,7 +170,7 @@
 				077CE4F5274C1F5A00DCC176 /* IGFeedPostActionsTableViewCell.swift */,
 				077CE4F7274C1F7A00DCC176 /* IGFeedPostGeneralTableViewCell.swift */,
 			);
-			path = "Home Feed";
+			path = "Home Feed & Posts";
 			sourceTree = "<group>";
 		};
 		077CE4FB274C6C9200DCC176 /* CollectionView Headers */ = {
@@ -230,6 +234,8 @@
 				073C884E27A3553B004659D1 /* FollowState.swift */,
 				073C885027A35567004659D1 /* UserRelationship.swift */,
 				073C885927A98152004659D1 /* UserNotification.swift */,
+				073C885B27A9AB42004659D1 /* PostRender.swift */,
+				073C885D27A9BE7F004659D1 /* HomeFeedRenderModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -437,11 +443,13 @@
 				07B35D432742AEBF00F2E615 /* ExploreViewController.swift in Sources */,
 				073C885327A35C2A004659D1 /* noNotificationView.swift in Sources */,
 				073C885827A8D937004659D1 /* NotificationLikeEventTableViewCell.swift in Sources */,
+				073C885E27A9BE7F004659D1 /* HomeFeedRenderModel.swift in Sources */,
 				07B35D452742AED500F2E615 /* CameraViewController.swift in Sources */,
 				07B35D4E2742AF5F00F2E615 /* RegistrationViewController.swift in Sources */,
 				07B35D5E2742AFFC00F2E615 /* PostEditorViewController.swift in Sources */,
 				07A87B9F27A20A8B001EEE75 /* CommentLikeModel.swift in Sources */,
 				07B35D522742AF8500F2E615 /* PostViewController.swift in Sources */,
+				073C885C27A9AB42004659D1 /* PostRender.swift in Sources */,
 				077CE4EA2743352600DCC176 /* StorageManager.swift in Sources */,
 				073C884D27A33DEC004659D1 /* UserFollowTableViewCell.swift in Sources */,
 				07B35D2E2742AD5F00F2E615 /* HomeViewController.swift in Sources */,
