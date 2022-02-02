@@ -49,7 +49,7 @@ class HomeViewController: UIViewController {
 	}
 	
 	private func createMockModels() {
-		let user: User = User(username: "joe", name: (first: "", last: ""), profilePhoto: URL(string: "https://www.google.com")!, birthdate: Date(), gender: .male, counts: UserCount(followers: 1, following: 1, posts: 1), joinDate: Date())
+		let user: User = User(username: "@joe", name: (first: "", last: ""), profilePhoto: URL(string: "https://www.google.com")!, birthdate: Date(), gender: .male, counts: UserCount(followers: 1, following: 1, posts: 1), joinDate: Date())
 		let post = UserPost(identifier: "", postType: .photo, thumbnailImage: URL(string: "https://www.google.com")!, postURL: URL(string: "https://www.google.com")!, caption: nil, likeCount: [], comments: [], createdDate: Date(), taggedUsers: [], owner: user)
 		
 		var comments = [PostComment]()
@@ -129,6 +129,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 			switch model.header.renderType {
 			case .header(let user):
 				let cell = tableView.dequeueReusableCell(withIdentifier: IGFeedPostHeaderTableViewCell.identifier) as! IGFeedPostHeaderTableViewCell
+				cell.configure(with: user)
+				cell.delegate = self
 				return cell
 			default:
 				fatalError()
@@ -138,6 +140,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 			switch model.post.renderType {
 			case .primaryContent(let post):
 				let cell = tableView.dequeueReusableCell(withIdentifier: IGFeedPostTableViewCell.identifier) as! IGFeedPostTableViewCell
+				cell.configure(with: post)
 				return cell
 			default:
 				fatalError()
@@ -147,6 +150,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 			switch model.actions.renderType {
 			case .actions(let provider):
 				let cell = tableView.dequeueReusableCell(withIdentifier: IGFeedPostActionsTableViewCell.identifier) as! IGFeedPostActionsTableViewCell
+				cell.delegate = self
 				return cell
 			default:
 				fatalError()
@@ -196,4 +200,35 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
 		return UIView()
 	}
+}
+
+extension HomeViewController: IGFeedPostHeaderTableViewCellDelegate {
+	func didTapMoreButton() {
+		let actionSheet = UIAlertController(title: "Post Options", message: nil, preferredStyle: .actionSheet)
+		actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+		actionSheet.addAction(UIAlertAction(title: "Report", style: .destructive, handler: { [weak self] _ in
+			self?.reportPost()
+		}))
+		present(actionSheet, animated: true)
+	}
+	
+	func reportPost() {
+		
+	}
+}
+
+extension HomeViewController: IGFeedPostActionsTableViewCellDelegate {
+	func didTapLikeButton() {
+		print("like")
+	}
+	
+	func didTapCommentButton() {
+		print("comment")
+	}
+	
+	func didTapSendButton() {
+		print("send")
+	}
+	
+	
 }
