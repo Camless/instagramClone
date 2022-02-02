@@ -76,7 +76,6 @@ class NotificationLikeEventTableViewCell: UITableViewCell {
 		self.model = model
 		switch model.type {
 		case .like(let post):
-			break
 			let thumbnail = post.thumbnailImage
 			guard !thumbnail.absoluteString.contains("google.com") else {
 				return
